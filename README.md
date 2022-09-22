@@ -8,3 +8,9 @@
 #VIEW LIST USERS
 ![listuser](/img/listuser.png)
 
+#VIEW CREATE 
+![listuser](/img/create.png)
+
+#VIEW EDIT 
+![listuser](/img/edit.png)
+
