@@ -1,0 +1,10 @@
+# CRUD DJANGO 
+
+## PRESENTADO POR:
+### JAIRO ELIÉCER ROJAS HERRERA
+### JUAN PABLO MEZA GAZABON
+
+
+#VIEW LIST USERS
+![listuser](/img/listuser.png)
+
