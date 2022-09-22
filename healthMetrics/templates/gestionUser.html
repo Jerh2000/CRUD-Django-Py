@@ -1,0 +1,50 @@
+{% extends "./index.html" %}
+
+{% block title %} Health metrics management {% endblock %}
+
+{% block body %}
+<div class="row d-flex justify-content-center py-4">
+      
+    <div class="col-md-10">
+        <div class="card shadow border-0">
+            <div class="card-body">
+                <h1 class="fs-5">User Metrics List</h1>
+                <a class="btn btn-primary" href="createUser">Create</a>
+                <div class="table-responsive py-2">
+                    <table id="table-users" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Weight</th>
+                                <th>Hear Rate</th>
+                                <th>Oxygen Saturation</th>
+                                <th>Stress Level</th>
+                                <th colspan="2">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for u in users %}
+                            <tr>
+                                <td width="10%">{{u.id}}</td>
+                                <td width="40%">{{u.name}}</td>
+                                <td width="10%">{{u.age}}</td>
+                                <td width="10%">{{u.weight}} KG</td>
+                                <td width="10%">{{u.hearRate}}</td>
+                                <td width="10%">{{u.oxygenSaturation}}</td>
+                                <td width="10%">{{u.stressLevel}}</td>
+                                
+                                <td><a href="editingUser/{{u.id}}" class="btn btn-info btn-sm">Editar</a></td>
+                                <td><a href="deleteUser/{{u.id}}" class="btn btn-danger btn-sm btnEliminacion">Eliminar</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
