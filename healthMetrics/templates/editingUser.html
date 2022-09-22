@@ -7,8 +7,9 @@
 {% block body %}
 <div class="row d-flex justify-content-center">
     <div class="col-md-5">
-        <h2>Edit User Info </h2>
+        
         <div class="card shadow border-0 py-4">
+            <h2 class="text-center">Edit User Info </h2>
             <div class="card-body">
                 <form action="/editUser/{{user.id}}" method="POST">{% csrf_token %}
                     <div class="form-group">
